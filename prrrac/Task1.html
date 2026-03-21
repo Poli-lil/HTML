@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskk</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #c4cbe4;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            /* max-width: 700px; */
+            margin: 50px auto;
+        }
+        .tabs {
+            width: 150px;
+            display: flex;
+             flex-direction: column; /*сверху вниз */
+        }
+
+        .tab {
+            padding: 15px;
+            background: #8a8484;
+            color: white;
+            border-bottom: 1px solid #4d4a4a;
+        }
+
+        .tab:hover {
+            background: #555;
+        }
+
+        .tab.activ {
+            background: #c7c3c3; /* цвет выбраной вкладки, активная вкладка */
+         }
+
+        .cont {
+            flex: 1;
+            background: #4e4949;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            
+        }
+
+        .card {
+            background: #818080;
+            color: white;
+            width: calc(35%);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <div class="tab activ">Tab 1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+        </div>
+
+        <div class="cont">
+
+            <div class="card">
+                <img src="..//prrrac/350x220.png">
+                <h3>Header 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo culpa, eaque eligendi,
+                    minima error quaerat molestiae quidem perferendis enim maiores dolor dolore numquam qui veritatis
+                    accusamus esse corporis. Explicabo reprehenderit tempora minima architecto ex exercitationem aliquam
+                    itaque. Laboriosam iste aliquam consequatur assumenda tempore eum eveniet? Aliquam iure atque
+                    voluptatibus!</p>
+            </div>
+
+            <div class="card">
+                <img src="..//prrrac/350x220.png">
+                <h3>Header 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi animi nemo debitis eius
+                    voluptas voluptatum perspiciatis dolorem quod adipisci nihil aperiam non sint voluptatibus tempora
+                    molestias officia, sunt temporibus maxime ratione corporis officiis? Illum aut vitae error harum id
+                    nam a ratione sit laborum, at tempora molestiae unde odio.</p>
+            </div>
+
+            <div class="card">
+                <img src="..//prrrac/350x220.png">
+                <h3>Header 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sapiente non facere quibusdam vel
+                    ipsa nobis. Repudiandae dolorem, doloribus mollitia nostrum vero fugit enim soluta quasi sapiente
+                    quaerat, veniam eligendi architecto nulla aliquid tenetur autem, quisquam voluptatibus quo. Facere,
+                    magnam eligendi perspiciatis culpa maiores corporis ducimus deleniti ut incidunt impedit.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
