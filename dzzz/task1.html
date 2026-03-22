@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f3ebeb;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: rgb(243, 240, 240);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.1); /* увеличение */
+    z-index: 10; /* поверх остальных иконок */
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.featur {
+    font-size: 14px;
+    color: gray;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.enter button {
+     background: red;
+}
+.profess button { 
+    background: orange;
+}
+.standard button {
+     background: blue;
+}
+.basic button {
+     background: green;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card enter">
+        <div class="title">ENTERPRISE</div>
+        <div class="price">$69</div>
+        <div class="featur">
+            10GB disk space<br>
+            100GB bandwidth<br>
+            20 email accounts
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card profess">
+        <div class="title">PROFESSIONAL</div>
+        <div class="price">$29</div>
+        <div class="featur">
+            5GB disk space<br>
+            60GB bandwidth<br>
+            10 email accounts
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card standard">
+        <div class="title">STANDARD</div>
+        <div class="price">$19</div>
+        <div class="featur">
+            3GB disk space<br>
+            30GB bandwidth<br>
+            5 email accounts
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card basic">
+        <div class="title">BASIC</div>
+        <div class="price">$9</div>
+        <div class="featur">
+            1GB disk space<br>
+            10GB bandwidth<br>
+            2 email accounts
+        </div>
+        <button>BUY</button>
+    </div>
+
+</div>
+
+</body>
+</html>
