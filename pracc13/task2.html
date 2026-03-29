@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 2px solid rgba(241, 241, 241, 0.3);
+    backdrop-filter: blur(5px);
+
+    color: white;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row input {
+    flex: 1;
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h2>Contact form</h2>
+
+    <form>
+
+        
+        <div class="row">
+            <input type="text" name="First Name">
+            <input type="text" name="Last Name">
+        </div>
+
+        
+        <input type="email" name="Your Email">
+        <br><br>
+
+        
+        <input type="tel" name="Phone">
+        <br>
+
+        
+        <select>
+            <option>Subject</option>
+            <option>Support</option>
+            <option>Feedback</option>
+        </select>
+        <br>
+
+        <input type="Message"></textarea>
+        <input type="submit">SEND MESSAGE</input>
+
+    </form>
+
+</div>
+
+</body>
+</html>
