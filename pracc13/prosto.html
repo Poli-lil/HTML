@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e3ebf8;
+    }
+    .header {
+    background: #2c3e50;
+    color: whitergb(56, 80, 104);
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    }
+    .container{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+    .sid{
+        width:250px;
+        background-color: #e3ebf8;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .sid h3{
+        margin-top: 0;
+    }
+    .form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+    .form input, .form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    }   
+    .result{
+        flex: 1;
+    }
+    .flig {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    button{
+    padding: 8px 12px;
+    background: #4caef0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    }
+    button:hover{
+        background: rgb(136, 192, 238);
+    }
+    </style>
+</head>
+<body>
+    <div class="header">First Search List</div>
+    <div class="cont">
+        <div class="sid">
+            <h3>Фильтры</h3>
+            <p>Количество остановок:</p>
+            <label><input type="checkbox"> Без  остановок</label><br>
+
+        <label><input type="checkbox"> 1 остановка </label><br>
+        <label><input type="checkbox"> 2+ остановки</label>
+        <p>Цена:</p>
+        <label><input type="radio" name="price"> До 100$</label><br>
+        <label><input type="radio" name="price"> До 300$</label><br>
+        <label><input type="radio" name="price"> Любая</label>
+    </div>
+        </div>
+    <div class="result">
+        <div class="form">
+            <input type="text" placeholder="Место отпарвление">
+            <input type="text" placeholder="Место прибытия">
+            <input type="date">
+            <input type="date">
+            <select>
+                <option>Эконом</option>
+                <option>Бизнес</option>
+            </select>
+            <button>Поиск</button>
+        </div>
+    <div class="flig">
+        <div class="info">
+            <span>Kyiv - London</span>
+            <span>12:00 - 19:30</span>
+            <span>Без остановок</span>
+        </div>
+    </div>
+        <div class="price">150$
+        <button>Выбрать</button>
+    </div>
+    <div class="flig">
+        <div class="info">
+            <span>Kyiv - Berlin</span>
+            <span>12:00 - 17:30</span>
+            <span>Без остановок</span>
+        </div>
+    </div>
+        <div class="price">100$
+        <button>Выбрать</button>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sid {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sid h3 {
+    margin-top: 0;
+}
+
+.main {
+    flex: 1;
+}
+
+.search-bar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-bar input, .search-bar select {
+    padding: 8px;
+}
+
+.search-bar button {
+    background: #3b5998;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.flig-list {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.flig-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.flig-row:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+}
+
+button.book {
+    background: #405ea0;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div>Flights - Search List</div>
+    <div>Home / Flights Search List</div>
+</div>
+
+<div class="container">
+
+<div class="sid">
+    <h3>Filter</h3>
+
+    <p><b>No. of Stops</b></p>
+    <label><input type="checkbox"> Non Stop</label><br>
+    <label><input type="checkbox"> 1 Stop</label><br>
+    <label><input type="checkbox"> 2+ Stops</label>
+
+    <p><b>Price</b></p>
+    Min: <input type="number" value="0" style="width:70px;"> 
+    Max: <input type="number" value="1000" style="width:70px;">
+
+    <p><b>Airlines</b></p>
+    <label><input type="checkbox"> American Airlines</label><br>
+    <label><input type="checkbox"> Air Canada</label><br>
+    <label><input type="checkbox"> Jet Airways</label><br>
+    <label><input type="checkbox"> IndiGo</label>
+</div>
+
+<div class="main">
+
+<div class="search-bar">
+    <input type="text" placeholder="From">
+    <input type="text" placeholder="To">
+    <input type="date">
+    <input type="date">
+    <select>
+        <option>Econom Class</option>
+        <option>Business Class</option>
+    </select>
+    <button>Search</button>
+</div>
+
+<div class="flig-list">
+
+<div class="flig-row">
+    <div>IndiGo</div>
+    <div>23:30</div>
+    <div>18h 55m</div>
+    <div>18:15</div>
+    <div class="price">$980</div>
+    <button class="book">Book</button>
+</div>
+
+<div class="flig-row">
+    <div>IndiGo</div>
+    <div>23:30</div>
+    <div>18h 55m</div>
+    <div>18:15</div>
+    <div class="price">$980</div>
+    <button class="book">Book</button>
+</div>
+
+<div class="flig-row">
+    <div>IndiGo</div>
+    <div>23:30</div>
+    <div>18h 55m</div>
+    <div>18:15</div>
+    <div class="price">$980</div>
+    <button class="book">Book</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- placeholder - подсказка -->
