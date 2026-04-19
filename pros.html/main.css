@@ -1,0 +1,79 @@
+.btn, .btn-info, .btn-cancel, .btn-buy {
+  padding: 10px 15px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+}
+
+.btn-buy {
+  background-color: rgb(22, 109, 22);
+}
+
+.btn-cancel {
+  background-color: rgb(134, 11, 11);
+}
+
+.btn-info {
+  background-color: rgb(69, 114, 173);
+}
+
+.btn-buy:hover {
+  background-color: rgb(17.7175572519, 87.7824427481, 17.7175572519);
+  color: rgb(233, 204, 111);
+}
+
+.btn-cancel:hover {
+  background-color: rgb(110.4344827586, 9.0655172414, 9.0655172414);
+  color: rgb(233, 204, 111);
+}
+
+.btn-info:hover {
+  background-color: rgb(61.729338843, 101.9876033058, 154.770661157);
+  color: rgb(233, 204, 111);
+}
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 180px;
+  background-color: beige;
+  padding: 10px;
+  margin: 10px 15px;
+  transition: all 0.4s ease 0s;
+}
+.product-card img {
+  height: 195px;
+  max-width: 178px;
+  margin: 10px 15px;
+  margin-bottom: 0;
+}
+.product-card p, .product-card h2 {
+  margin: 5px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-card:hover {
+  background-color: rgb(235.9333333333, 235.9333333333, 188.2666666667);
+}
+
+body {
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+}/*# sourceMappingURL=main.css.map */

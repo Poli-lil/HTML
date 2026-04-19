@@ -1,0 +1,20 @@
+.product-card{
+    @include flex-column-div();
+    width: 180px;
+    background-color: $card-bg;
+    padding: $padding;
+    margin: $margin-y-axis $margin-x-axis;
+    transition: all 0.4s ease 0s;
+    img{
+        height: 195px;
+        max-width: 178px;
+        margin: $margin-y-axis $margin-x-axis;
+        margin-bottom: 0;
+    }
+    p,h2{
+        @include paragraphs-settings()
+    }
+    &:hover{
+        background-color: darken($card-bg,8%);
+    }
+}

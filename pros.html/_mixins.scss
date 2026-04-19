@@ -1,0 +1,18 @@
+@mixin flex-div-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-div{
+    @include flex-div-center();
+    flex-direction: column;
+    gap: 4px;
+    border: $border-simple;
+    border-radius: 10px;
+}
+
+@mixin paragraphs-settings{
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

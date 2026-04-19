@@ -1,0 +1,39 @@
+.btn{
+    padding: $padding 15px;
+    border: $border-simple;
+    border-radius: 7px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    transition: all 0.4s ease 0s
+}
+
+.btn-buy{
+    @extend .btn;
+    background-color: $success;
+}
+
+.btn-cancel{
+    @extend .btn;
+    background-color: $danger;
+}
+
+.btn-info{
+    @extend .btn;
+    background-color: $info;
+}
+
+.btn-buy:hover{
+    background-color: darken($success,5%);
+    color: rgb(240, 222, 164);
+}
+
+.btn-cancel:hover{
+    background-color: darken($danger,5%);
+    color: rgb(233, 204, 111);
+}
+
+.btn-info:hover{
+    background-color: darken($info,5%);
+    color: rgb(197, 171, 87);
+}

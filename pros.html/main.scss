@@ -1,0 +1,20 @@
+@import "_variables";
+@import "_mixins";
+@import "_buttons";
+@import "_cards";
+
+body{
+    padding: $padding;
+    margin: $margin-y-axis;
+    background-color: $body-bg;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.goods{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    
+}
